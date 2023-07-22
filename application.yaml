@@ -7,17 +7,17 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/ishukeshri27/argo-cd.git
+    repoURL: https://github.com/ishukeshri27/argo-cd.git  ##put your repo link
     targetRevision: HEAD
-    path: argo-cd
+    path: argo-cd #put your path for deployement
   destination: 
-    server: https://kubernetes.default.svc
+    server: https://kubernetes.default.svc  ##used to find target cluster
     namespace: myapp
 
   syncPolicy:
     syncOptions:
-    - CreateNamespace=true
+    - CreateNamespace=true   ##for creaing namespace 
 
     automated:
-      selfHeal: true
-      prune: true
+      selfHeal: true   ##for automatically handling the changes every 3 minutes by default
+      prune: true   ##removing unnessceary resoucres
