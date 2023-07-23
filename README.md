@@ -13,3 +13,8 @@ steps to install argo cd on kuberentes cluster
 9. Now run  kubectl apply -f application.yaml 
 10. Make sure you put your repo link and path of your deployment and service in application.yaml
 11. you can check all the things like manully making replicas to different value which is not there in deployment.yaml you will see it will automatically revert to git configuration rather than changes devops teams has done manully
+
+
+Useful Links- https://argo-cd.readthedocs.io/en/stable/getting_started/#1-install-argo-cd
+              https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/
+              https://argo-cd.readthedocs.io/en/stable/operator-manual/declarative-setup/
